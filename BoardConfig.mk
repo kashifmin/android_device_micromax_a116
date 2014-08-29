@@ -28,6 +28,7 @@ TARGET_CPU_VARIANT := cortex-a7
 # blob hacks
 COMMON_GLOBAL_CFLAGS += -DMR1_AUDIO_BLOB -DDISABLE_HW_ID_MATCH_CHECK -DNEEDS_VECTORIMPL_SYMBOLS
 BOARD_HAVE_PRE_KITKAT_AUDIO_BLOB := true
+BOARD_HAVE_PRE_KITKAT_AUDIO_POLICY_BLOB := true
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # power
@@ -73,3 +74,6 @@ WIFI_DRIVER_FW_PATH_P2P := "STA+P2P"
 
 # telephony
 BOARD_RIL_CLASS := ../../../device/micromax/a116/ril/
+
+# allow more than one lun file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"

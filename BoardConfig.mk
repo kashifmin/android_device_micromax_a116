@@ -85,6 +85,7 @@ BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_mtk
 WIFI_DRIVER_FW_PATH_AP := "AP"
 WIFI_DRIVER_FW_PATH_STA := "STA"
 WIFI_DRIVER_FW_PATH_P2P := "STA+P2P"
+WIFI_DRIVER_FW_PATH_PARAM:="/dev/wmtWifi"
 
 # telephony
 BOARD_RIL_CLASS := ../../../device/micromax/a116/ril/

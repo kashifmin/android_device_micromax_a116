@@ -87,7 +87,7 @@ WIFI_DRIVER_FW_PATH_STA := "STA"
 WIFI_DRIVER_FW_PATH_P2P := "STA+P2P"
 
 # telephony
-BOARD_RIL_CLASS := ../../../device/micromax/a116/ril/
+#BOARD_RIL_CLASS := ../../../device/micromax/a116/ril/
 
 #nvram permission fix
 TARGET_SPECIFIC_HEADER_PATH := device/micromax/a116/include
